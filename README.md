@@ -27,11 +27,12 @@ Pillow (PIL) – image loading and color conversion .
 
 # Functional Description
 1️.Image Loading and Preprocessing
-Images are loaded using PIL. If an image is originally grayscale (mode == 'L'), it is detected and reported. All images are then converted to RGB format to ensure uniform processing.
+Images are loaded using PIL. If an image is originally grayscale (mode == 'L'),
+it is detected and reported. All images are then converted to RGB format to ensure uniform processing.
 Each image is converted into a NumPy array of shape:
 (height, width, 3)
 
-2. Image-Level Statistical Analysis
+2.Image-Level Statistical Analysis
 
 For each image, the following statistics are computed:
 Shape of the image array
