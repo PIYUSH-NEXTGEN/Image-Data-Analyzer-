@@ -52,24 +52,24 @@ def histogram(channel,channel_name):
     print(f"Bright: {bright/total*100:5.1f}%\n")
 
 #Loading images -
-arr1 = image_stats("luffy.png", "(arr1)")
-arr2 = image_stats("rainbow.png", "(arr2)")
+arr1 = image_stats("luffy.png", "(luffy.png)")
+arr2 = image_stats("rainbow.png", "(rainbow.png)")
 
 #Channel Stats -
-channel_stats(arr1,"(arr1)")
-channel_stats(arr2,"(arr2)")
+channel_stats(arr1,"(luffy.png)")
+channel_stats(arr2,"(rainbow.png)")
 
 #Brightness -
 brightness1 = arr1.mean()
 brightness2 = arr2.mean()
 
 if brightness1 > brightness2 :
-    print("arr1 is brighter\n")
+    print("luffy.png is brighter\n")
 else :
-    print("arr2 is brighter\n")
+    print("rainbow.png is brighter\n")
 
 #Histogram -
-histogram(arr1,"arr1")
-histogram(arr2,"arr2")
+histogram(arr1,"luffy.png")
+histogram(arr2,"rainbow.png")
 
 '''MORE STUFFS COMING'''
